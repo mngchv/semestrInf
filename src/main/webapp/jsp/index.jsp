@@ -1,16 +1,21 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
     <meta charset="utf-8">
     <title>
         Give a Ride - Официальный Сайт | Знакомства ПОПУТЧИКОВ. Поиск Попутчика куда угодно, на чем удобно.
     </title>
 </head>
 <body>
+
+<%--<div>--%>
+<%--    <img src="https://kotone.net/wp/wp-content/uploads/2019/02/89b897950d08e8bb7605c867321de8dd_m.jpg">--%>
+<%--</div>--%>
+
 <div class="topnav">
-    <a class="active" href="index.jsp">Home</a>
-    <a href="registration.jsp">Quit</a>
+    <a class="active" href="/index">Home</a>
+    <a href="/registration">Quit</a>
     <div class="logo"><img src="https://a.radikal.ru/a14/2110/31/817d215d63e3.png"  width="181px" height="181px" alt="titleImg"></div>
 </div>
 
@@ -18,20 +23,24 @@
 
 
 
-<a href="index.jsp"><img src="https://d.radikal.ru/d07/2110/1e/2196bf2925b4.png" width="300px" height="120px" alt="headImg"></a>
-<form action="CreateTrip.jsp">
+<a href="/index"><img src="https://d.radikal.ru/d07/2110/1e/2196bf2925b4.png" width="300px" height="120px" alt="headImg"></a>
+
+
+<%--    <p><a href="/CreateTrip">+ Создать поездку!</a>.</p>--%>
+<form action="/CreateTrip">
     <button type="submit" class="createbtn">
-        + Создать поездку
+         + Создать поездку!
     </button>
 </form>
+
+
+
 
 <%--<div id="footer">--%>
 <%--    <a href="About.html"> О нас </a> <br>--%>
 <%--    <a href="privacyPolicy.html">Политика конфиденциальности</a><br>--%>
 <%--    <a href="paymentMethod.html">Способ оплаты</a><br>--%>
-
-
-</div>
+<%--</div>--%>
 
 <ul class="social-icons">
     <li><a class="social-icon-fb" href="https://www.facebook.com/profile.php?id=100005315116478" title="facebook" target="_blank" rel="noopener"></a></li>
@@ -42,35 +51,54 @@
 <section class="grid">
     <article class="grid-item">
         <div class="image">
-            <img src="photo.jpg" />
+            <img src="https://mtdata.ru/u28/photo420A/20020120234-0/original.jpg"  alt=""/>
         </div>
-        <div class="info">
-            <h2>Название</h2>
+
             <div class="info-text">
-                <p>Текст</p>
-            </div>
-            <div class="button-wrap">
-                <a class="atuin-btn" href="#link">Подробнее</a>
-            </div>
+                <p>Откуда:</p>
+                <p>Куда:</p>
+                <p>Места:</p>
+                <p>Стоимость:</p>
+                <p>Авто:</p>
+                <p>Время:</p>
+
         </div>
     </article>
-
 
 
     <article class="grid-item">
         <div class="image">
-            <img src="photo.jpg" />
+            <img src="https://mtdata.ru/u28/photo420A/20020120234-0/original.jpg"  alt=""/>
         </div>
-        <div class="info">
-            <h2>Название</h2>
-            <div class="info-text">
-                <p>Текст</p>
-            </div>
-            <div class="button-wrap">
-                <a class="atuin-btn" href="#link">Подробнее</a>
-            </div>
+
+        <div class="info-text">
+            <p>Откуда:</p>
+            <p>Куда:</p>
+            <p>Места:</p>
+            <p>Стоимость:</p>
+            <p>Авто:</p>
+            <p>Время:</p>
+
         </div>
     </article>
+
+
+    <article class="grid-item">
+        <div class="image">
+            <img src="https://mtdata.ru/u28/photo420A/20020120234-0/original.jpg"  alt=""/>
+        </div>
+
+        <div class="info-text">
+            <p>Откуда:</p>
+            <p>Куда:</p>
+            <p>Места:</p>
+            <p>Стоимость:</p>
+            <p>Авто:</p>
+            <p>Время:</p>
+
+        </div>
+    </article>
+
 </section>
 
 

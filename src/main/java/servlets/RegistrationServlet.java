@@ -25,7 +25,7 @@ public class RegistrationServlet extends HttpServlet {
     @Override
     public void init() throws ServletException {
         try {
-            //Подгружаем драйвер, оно автоматически регистрирует JDBC
+
             Class.forName("org.postgresql.Driver");
             Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/semestr", "postgres", "postgres");
 

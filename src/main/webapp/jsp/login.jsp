@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="primaryStyle.css">
+    <link rel="stylesheet" type="text/css" href="../css/MainStyle.css">
     <title>Авторизация</title>
 </head>
 <body>
@@ -31,10 +31,10 @@
 
 
 
-        <button type="submit">Войти</button>
+        <button type="submit" class="primaryBtn">Войти</button>
     </div>
 
-<%--   <p>Забыли пароль? <a href="resetPassword.html">Восстановить пароль</a>.</p>&ndash;%&gt;--%>
+<p>Забыли пароль? <a href="resetPassword.html">Восстановить пароль</a>.</p>
 </form>
 
 

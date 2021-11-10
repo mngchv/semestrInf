@@ -8,11 +8,11 @@ import java.util.Optional;
 
 public class UsersRepositoryImpl implements UsersRepository{
 
-    private Connection connection;
+    private final Connection connection;
 
-
+    //language=sql
     private final String SQL_INSERT_USER = "INSERT INTO users(nickname, passwordHash) VALUES (?, ?)";
-    private final String SQL_FIND_USER_BY_LOGIN = "SELECT * FROM users WHERE login=?;";
+    private final String SQL_FIND_USER_BY_LOGIN = "SELECT * FROM users WHERE nickname=?;";
 
     public UsersRepositoryImpl(Connection connection) {
         this.connection = connection;
@@ -36,7 +36,9 @@ public class UsersRepositoryImpl implements UsersRepository{
             preparedStatement.setString(1, user.getNickname());
             preparedStatement.setString(2, user.getPasswordHash());
 
-            resultSet = preparedStatement.executeQuery();
+            preparedStatement.executeUpdate();
+
+            resultSet = preparedStatement.getGeneratedKeys();
 
             if (resultSet.next()) {
                 user.setId(resultSet.getLong("id"));

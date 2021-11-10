@@ -9,16 +9,16 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="primaryStyle.css">
+    <link rel="stylesheet" type="text/css" href="../css/MainStyle.css">
     <title>Регистрация</title>
 </head>
 <body>
-<form action="/registration" method="post" class="form">
+<form action="${pageContext.request.contextPath}/registration" method="post" class="form">
 
     <div class="container">
         <h1>Регистрация</h1>
         <p>Пожалуйста, заполните поля ниже, чтобы зарегистрироваться.</p>
-
+    
 
         <label><b>Логин</b></label>
         <input type="text" id="nickname" name="nickname" placeholder="Введите имя пользователя">
@@ -30,11 +30,11 @@
 
 
 
-        <button type="submit">Зарегистрироваться</button>
+        <button type="submit" class="primaryBtn">Зарегистрироваться</button>
     </div>
 
 
-    <p>Уже есть аккаунт? <a href="login.jsp">Войти</a>.</p>
+    <p>Уже есть аккаунт? <a href="/login">Войти</a>.</p>
 
 
 </form>

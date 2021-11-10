@@ -16,6 +16,7 @@
 
 body{
     background-color: #f8f8f8;
+    background-image:url("https://i.yapx.ru/PDWdM.jpg");
 }
 .topnav a:hover {
     background-color: #ddd;
@@ -24,7 +25,7 @@ body{
 
 .logo{
     position: absolute;
-    right:0%;
+    right:0;
 }
 
 .topnav a.active {
@@ -117,7 +118,7 @@ body{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 30px;
     row-gap: 30px;
-    padding: 20px 0;
+
 }
 /* Кол-во блоков на разных экранах */
 @media only screen and (max-width: 1200px) {
@@ -153,7 +154,7 @@ body{
 .grid-item:hover {
     box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
 }
-.grid-item .image img  {
+    .grid-item .image img  {
     transition: transform 280ms ease-in-out;
     display: block;
     width: 100%;
@@ -171,14 +172,11 @@ body{
     margin: 0;
     text-align: center;
 }
-.info-text p {
-    font-size: 15px;
-    line-height: 20px;
-    font-family: Verdana, sans-serif;
-    margin-bottom: 10px;
-}
-.info-text p:last-child {
-    margin-bottom: 0;
+.info-text {
+    /*background-color: rgb(46, 47, 54);*/
+    /*text-indent:100px;*/
+    padding-left: 40px;
+    font-size: 23px;
 }
 .grid-item .button-wrap {
     display: block;
@@ -231,4 +229,27 @@ body{
 .atuin-btn:focus:before {
     width: 100%;
     left: 0;
+}
+
+
+
+.column{
+    white-space: normal;
+
+    display: inline-block;
+
+    width: 48%;
+
+    vertical-align: top;
+
+    background: #fff2e1;
+}
+
+.column1{
+
+    white-space: nowrap;
+}
+
+.column.column1:first-child{
+    margin-right: 4%;
 }
